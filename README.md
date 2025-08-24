@@ -1,52 +1,100 @@
-📊 Nobel Prize Data Analysis
+🏅 Nobel Prize Data Analysis
 
-An interactive data storytelling project exploring Nobel Prize trends across countries, categories, gender, institutions, and ages of laureates.
+An end-to-end data analysis project exploring Nobel Prize winners from 1901 to 2020.
+The project uses pandas, Plotly, seaborn, and matplotlib to uncover trends in gender, geography, research institutions, and the age of Nobel laureates.
 
-🔍 What I Did
+Interactive Plotly charts provide an engaging way to explore the dataset, while static seaborn/matplotlib plots are saved for reporting.
 
-Cleaned and processed the Nobel Prize dataset (1901–2020).
+🚀 Features
 
-Created interactive dashboards with Plotly and insightful visuals using Matplotlib & Seaborn.
+Data Cleaning & Preparation
 
-Explored key questions like:
+Handled missing values and duplicates.
 
-📈 How has the number of prizes changed over time?
+Extracted prize share percentage from fractional values (e.g., 1/2, 1/3).
 
-🌍 Which countries & institutions dominate Nobel Prizes?
+Converted birth dates to datetime format.
 
-👩‍🔬 What’s the gender split in different categories?
+Exploratory Data Analysis (EDA)
 
-👶 At what age do most laureates win?
+First and last years of Nobel awards.
 
-📊 Key Visuals
+Gender split of laureates.
 
-🥇 Gender Split: Male vs Female winners
+Repeat winners across years and categories.
 
-🏆 Category Breakdown: Physics, Chemistry, Peace, Medicine, Literature, Economics
+First prize in Economics (added in 1969).
 
-🌍 Top 20 Countries & Institutions by Nobel Prizes
+Interactive Plotly Visualizations
 
-🗺️ Choropleth World Map of Nobel Prize distribution
+🍩 Donut chart: Male vs Female winners.
 
-📈 Prizes Over Time with rolling averages
+📊 Bar charts: Prizes by category, gender split per category, top countries, cities, and institutions.
 
-👶 Age Analysis: Distribution & trends by category
+🌍 Choropleth map: Global distribution of Nobel Prizes.
 
-⚡ Tech Stack
+🌞 Sunburst chart: Research institutions grouped by country & city.
 
-Python (pandas, numpy)
+📈 Cumulative country performance over time.
 
-Visualization: Plotly, Matplotlib, Seaborn
+Static Seaborn & Matplotlib Plots (saved to /plots)
 
-🌟 Insights
+Prizes per year + rolling average.
 
-Nobel Prizes are historically dominated by men, but female representation is growing.
+Nobel Prizes vs. average prize share percentage.
 
-The USA leads in Nobel Prizes, followed by Europe.
+📉 Age trends over time.
 
-Most laureates win in their 40s–60s, though it varies by category.
+📦 Distribution & boxplots of winning age by category.
 
-Research hubs (Cambridge, Harvard, etc.) appear as major prize hotspots.
+🔬 Regression plots (per category & combined).
 
-📌 This project is part of my Data Science portfolio.
-It shows my ability to clean data, find insights, and communicate with compelling visuals.
+🛠️ Tech Stack
+
+Python 🐍
+
+pandas – Data cleaning & manipulation
+
+numpy – Numerical calculations
+
+plotly.express – Interactive visualizations
+
+matplotlib & seaborn – Statistical plots
+
+▶️ How to Run
+
+Clone this repo:
+
+git clone https://github.com/DebanilBora/Nobel-prize-analysis.git
+cd nobel-prize-analysis
+
+
+Install dependencies:
+
+pip install pandas numpy matplotlib seaborn plotly
+
+
+Run the script:
+
+python main.py
+
+
+Interactive charts will open in your browser.
+
+Static plots will be saved in the plots/ folder.
+
+📌 Key Insights
+
+Only ~6% of Nobel Prizes have been awarded to women.
+
+The United States leads in Nobel Prizes, followed by the UK and Germany.
+
+Top institutions include Harvard, Stanford, and Cambridge.
+
+Average age of laureates has increased over time.
+
+Most Economics winners are older compared to Physics or Chemistry laureates.
+
+🔖 Tags
+
+#DataAnalysis #DataVisualization #Plotly #Seaborn #Matplotlib #NobelPrize #Python
